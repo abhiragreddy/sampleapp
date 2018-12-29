@@ -1,0 +1,16 @@
+extends layout
+ 
+block content
+  h3= title
+  form#form_add_login(name="addlogin", method="post", action="/addlogin")
+    span Name
+    span &nbsp;
+    input#input_name(type="text", placeholder="Email", name="Email")
+    br
+    br
+    span Password
+    span &nbsp;
+    input#input_password(type="text", placeholder="Password", name="Password")
+    br
+    br
+    button#submit_login(type="submit") submit

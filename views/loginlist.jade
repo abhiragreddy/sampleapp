@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h3.
+		login
+	ul
+		each login, i in loginlist
+			li#login_list_item
+				a(href="#") #{login.Email} has a password #{login.Password}
